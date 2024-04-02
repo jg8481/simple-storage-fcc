@@ -2,7 +2,8 @@
 
 pragma solidity >=0.8.0 <0.9.0;
 
-/**/
+/*
+// Just screwing around....
 contract SimpleStorage {
 
    bool  favoriteBool = false;
@@ -13,6 +14,17 @@ contract SimpleStorage {
    bytes  forAGoodTimeCall = "jen";
   
 }
+// This stuff compiled FYI ^
+*/
 
 // Note to self : 
 // The data-type string is an array of bytes.
+
+
+contract SimpleStorage {
+   uint256 favoriteNumber;
+   function store(uint256 _favoriteNumber) public {
+      favoriteNumber = _favoriteNumber;
+   }
+
+}  
