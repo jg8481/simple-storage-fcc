@@ -20,11 +20,18 @@ contract SimpleStorage {
 // Note to self : 
 // The data-type string is an array of bytes.
 
-
+/*
 contract SimpleStorage {
-   uint256 favoriteNumber;
+   uint256 public favoriteNumber;
+
    function store(uint256 _favoriteNumber) public {
       favoriteNumber = _favoriteNumber;
    }
 
+   function retrieve() public view returns(uint256){
+     return favoriteNumber;
+   }
+
 }  
+// This stuff compiled and deployed FYI ^
+*/
