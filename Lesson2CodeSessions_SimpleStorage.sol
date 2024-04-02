@@ -35,3 +35,33 @@ contract SimpleStorage {
 }  
 // This stuff compiled and deployed FYI ^
 */
+
+contract SimpleStorage {
+   uint256 favoriteNumber;
+
+   struct People {
+    uint256 favoriteNumber;
+    string name;
+   }
+    
+   //uint256 public favoriteNumberList;
+   People[] public people;
+
+   function store(uint256 _favoriteNumber) public {
+      favoriteNumber = _favoriteNumber;
+    
+   }
+
+   function retrieve() public view returns(uint256){
+     return favoriteNumber;
+   }
+
+   function addPerson(string memory _name, uint256 _favoriteNumber) public {
+    // People memory newPerson = People({favoriteNumber: _favoriteNumber, name: _name});
+    // people.push(newPerson);
+    // These 2 lines above and the line below do the same thing as the line below, but it's more explicit ^
+    people.push(People (_favoriteNumber, _name));
+   }
+
+}  
+// This stuff compiled and deployed FYI ^
