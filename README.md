@@ -1,4 +1,4 @@
-These are my notes while working on this Solidity course section.
+These are my notes while working on [Patrick's Javascript Blockchain/Smart Contract FreeCodeCamp Course](https://www.youtube.com/watch?v=gyMwXuJrbJQ).
 
 - On April 2, 2024 successfully compiled and deployed the following "store-retrieve" example code.
 ![alt text](./notes/image1.png)
